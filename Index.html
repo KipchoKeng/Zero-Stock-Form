@@ -19,11 +19,6 @@
                     <h3 class="text-center mb-4 text-primary">แบบเยี่ยมสำรวจ Zero Stock</h3>
                     <form id="zeroStockForm">
                         <div class="mb-3">
-
-
-
-
-                          
                             <label class="form-label">วันที่ประเมิน / บันทึกข้อมูล</label>
                             <input type="date" class="form-control" id="evalDate" required>
                         </div>
@@ -49,14 +44,13 @@
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2" id="submitBtn">บันทึกข้อมูล</button>
                     </form>
-                    <div id="alertMessage" class="mt-3"></div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby4KS9R71Ehl5ekhX5sJ5jmM2daj8_u6627IU-xdR9pNet73ciUi8XF6VmF3ESFLs5SLw/exec"; // แทนที่ด้วย URL ของ Google Apps Script
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx8z6EL062Zsv92L1pgI_ln-VQIJUnpJoisBTwJZbr8yat69nJXZJSO-xBGw1SgRGzZmg/exec"; 
 
         document.getElementById('zeroStockForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -75,7 +69,7 @@
 
             fetch(SCRIPT_URL, {
                 method: 'POST',
-                mode: 'no-cors', // ป้องกันปัญหา CORS
+                mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             }).then(() => {
