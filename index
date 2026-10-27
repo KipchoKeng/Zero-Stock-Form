@@ -51,7 +51,7 @@
     </div>
 
     <script>
-        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby4KS9R71Ehl5ekhX5sJ5jmM2daj8_u6627IU-xdR9pNet73ciUi8XF6VmF3ESFLs5SLw/exec"; // แทนที่ด้วย URL ของ Google Apps Script
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby4KS9R71Ehl5ekhX5sJ5jmM2daj8_u6627IU-xdR9pNet73ciUi8XF6VmF3ESFLs5SLw/exec"; //  Apps Script
 
         document.getElementById('zeroStockForm').addEventListener('submit', function(e) {
             e.preventDefault();
